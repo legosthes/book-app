@@ -4,9 +4,9 @@ from django.db import models
 # Create your models here.
 class Book(models.Model):
     status = [
-        ("read", "Read"),
-        ("reading", "Reading"),
-        ("want to read", "Want to Read"),
+        ("Read", "Read"),
+        ("Reading", "Reading"),
+        ("Want to Read", "Want to Read"),
     ]
 
     title = models.CharField(max_length=200, null=False)
