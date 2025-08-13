@@ -6,14 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-  
+    <a href="{%url 'books:index'%}"><button>Back</button></a>
     <a href="{%url 'books:edit' book.id%}"><button>Edit</button></a>
+    <form action="{%url 'books:detail' book.id%}" method="post">
+         {% csrf_token %}
+        <input type="hidden" name="_method" value="delete">
+        <button>Delete</button>
+    </form>
+    
     
     <div>
         <ul>
             <li>{{book.title}}</li>
             <li>{{book.author}}</li>
-            <li>{{book.status}}</li>
+            <li>{{book.status}}{%if book.date_read%}: {{book.date_read}} {%endif%}</li>
         </ul>     
       
     </div>

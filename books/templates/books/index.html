@@ -14,7 +14,7 @@
         <ul>
             <li><a href="{%url 'books:detail' book.id%}">{{book.title}}</a></li>
             <li>{{book.author}}</li>
-            <li>{{book.status}}</li>
+            <li>{{book.status}}{%if book.date_read%}: {{book.date_read}} {%endif%}</li>
         </ul>     
         {%endfor%}
     </div>
