@@ -1,0 +1,19 @@
+{
+  "name": "bookdb",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/legosthes/book-app#readme",
+  "bugs": {
+    "url": "https://github.com/legosthes/book-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legosthes/book-app.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+  }
+}
